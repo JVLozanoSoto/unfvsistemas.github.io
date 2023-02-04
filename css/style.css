@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	/*font-family: 'Ubuntu', sans-serif;*/
+}
+
+.wrapper2{
+	width: 100%;
+}
+
+.mega_menu{
+	width: 100%;
+	height: 55px;
+}
+
+.mega_menu ul{
+	width: 100%;
+	height: 100%;
+	background: #800000;
+	text-align: center;
+	line-height: 59px;
+	position: relative;
+}
+
+.mega_menu ul li{
+	display: inline-block;
+    padding: 0 20px;
+}
+
+.mega_menu ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	/*font-weight: bold;
+	letter-spacing: 5px;*/
+	font-size: 14px;
+    display: block;
+    transition-duration: 0.5s;
+    margin: 0 10px;
+}
+.mega_menu ul li div a{
+    text-transform: initial;
+}
+.mega_menu ul li div a:hover{
+    text-decoration: underline;
+}
+.wrapper2 .banner_img img{
+	width: 100%;
+	height: 500px;
+}
+
+.mega_menu ul li .sub_menu{
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	left: 0;
+	top: 55px;
+	padding: 25px 15px;
+	display: flex;
+	justify-content: space-around;
+	visibility: hidden;
+	line-height: 24px;
+}
+
+
+.mega_menu ul li:hover{
+	background: #fff;
+}
+
+.mega_menu ul li:hover a{
+    color: #800000;
+}
+
+.mega_menu ul li:hover .sub_menu{
+    visibility: visible;
+    z-index: 600;
+}
+
+.mega_menu ul li .sub_menu .col img{
+	width: 250px;
+	height: 180px;
+	display: block;
+}
+
+.mega_menu ul li .sub_menu p{
+	color: #000;
+	font-size: 14px;
+}
+
+.mega_menu ul li .sub_menu h4{
+	color: #ca914e;
+}
+
+.o_altura-m {
+	height: 20rem;
+}
+
+.list-group-item.active{
+	background-color: #800000 !important;
+	border-color: #800000  !important;
+}
+
+
+/*
+CHAT
+*/
+
+#chatbot {
+    background: #42A5F5;
+    border: none;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 4px 15px 0px;
+    cursor: pointer;
+    height: 56px;
+    position: fixed;
+	width: 56px;
+	z-index: 1;
+	font-size: 24px;
+	color: white;
+}
+
+
+#chatbot img {
+	opacity: 1;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	transition: opacity 0.3s ease-out;
+}
+
+#chat {
+	width: 370px;
+	height: 560px;
+	color: transparent;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	/* transform: translate3d(0px, 0px, 0px) scale(1, 1); */
+	transition: display 0.3s ease, opacity 0.2s ease-in, visibility 0.2s ease-in;
+	box-shadow: rgba(0, 0, 0, 0.24) 1px 4px 15px 0px;
+	position: fixed;
+	bottom: 100px;
+    right: 15px;
+	z-index: 1;
+}
+
+.showing#chat {
+	opacity: 1;
+	visibility: visible;
+	display: block;
+}
+
+.showing#chatbot img {
+	opacity: 0;
+}
+
+#chatbot i {
+	transform: rotate(0deg);
+	transition: all 0.3s ease-out;
+	opacity: 0;
+}
+
+.showing#chatbot i {
+	transform: rotate(45deg);
+	opacity: 1;
+}
+
+
